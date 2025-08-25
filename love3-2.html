@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>점심식사 초대 | 8월을 마무리하며</title>
+  <meta name="description" content="8월을 마무리하며… 점심식사 자리에 초대합니다. 2025년 8월 31일(일) 12:30, 고운달한정식." />
+  <meta property="og:title" content="점심식사 초대 | 8월을 마무리하며" />
+  <meta property="og:description" content="2025년 8월 31일(일) 12:30, 고운달한정식 (서울 양천구 중앙로 322 2·3·6층)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA4MDVfMjA0%2FMDAxNzU0MzI2NjIxNDM5.-BNFwVP97R7XVIGq6gCvuBdayy9YGPnJ434di4OCgJYg.bsjeCnY85Hmyv45B29x_aN0wjkWc376OdbQjFq_eCxYg.JPEG%2FKakaoTalk_20250805_013707348_03.jpg" />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #0f172a;
+      --fg: #e5e7eb;
+      --muted: #a3a8b3;
+      --accent: #60a5fa; /* sky-400 */
+      --accent-2: #38bdf8; /* sky-300 */
+      --ring: rgba(96,165,250, .4);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", AppleSDGothicNeo, Arial, sans-serif;
+      color: var(--fg);
+      background: radial-gradient(1200px 600px at 20% -10%, #0a2a4a 0%, transparent 60%),
+                  radial-gradient(800px 800px at 110% -10%, #19325a 0%, transparent 60%),
+                  var(--bg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 24px; }
+
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 10px; border: 1px solid #334155; border-radius: 999px;
+      background: rgba(15, 23, 42, 0.6);
+      color: var(--muted); font-size: 12px; letter-spacing: .2px;
+      backdrop-filter: blur(4px);
+    }
+    .badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-2); box-shadow: 0 0 0 6px rgba(56,189,248,.1); }
+
+    header.hero {
+      margin-top: 8px; margin-bottom: 16px;
+      display: grid; gap: 10px;
+    }
+    header.hero h1 {
+      margin: 4px 0 0; font-size: 28px; line-height: 1.25; letter-spacing: -0.3px; font-weight: 800;
+    }
+    header.hero p.lead { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid rgba(148, 163, 184, .18);
+      border-radius: var(--radius);
+      padding: 16px 16px 2px;
+      box-shadow: 0 8px 24px rgba(2,6,23,.4);
+    }
+    .grid { display: grid; gap: 12px; }
+
+    .row { display: grid; grid-template-columns: 96px 1fr; gap: 8px; align-items: start; padding: 10px 8px; border-radius: 12px; }
+    .row:hover { background: rgba(148,163,184,.06); }
+    .label { color: var(--muted); font-size: 13px; }
+    .value { font-weight: 600; font-size: 16px; }
+    .sub { color: var(--muted); font-size: 13px; }
+
+    .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+    .btn {
+      appearance: none; border: 1px solid rgba(148,163,184,.26); background: #0b1327;
+      color: #dbeafe; font-weight: 700; font-size: 15px; letter-spacing: .2px;
+      padding: 14px 16px; border-radius: 14px; width: 100%; text-align: center;
+      text-decoration: none; cursor: pointer; user-select: none;
+      transition: transform .05s ease, border-color .2s ease, box-shadow .2s ease;
+      box-shadow: 0 6px 18px rgba(30,64,175,.35);
+    }
+    .btn:hover { border-color: var(--accent); box-shadow: 0 8px 22px rgba(56,189,248,.3); }
+    .btn:active { transform: translateY(1px); }
+    .btn.primary { background: linear-gradient(180deg, #1d4ed8, #0ea5e9); border-color: transparent; color: white; }
+    .btn.ghost { background: rgba(15,23,42,.65); }
+
+    .gallery { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; margin-top: 18px; }
+    .gallery img {
+      width: 100%; height: 170px; object-fit: cover; border-radius: 16px;
+      border: 1px solid rgba(148,163,184,.2); display: block; background: #111827;
+    }
+
+    .tools { display: flex; gap: 10px; margin-top: 10px; }
+    .toolbtn { flex: 1; font-size: 12px; padding: 10px 12px; border-radius: 999px; border: 1px solid rgba(148,163,184,.25); color: var(--muted); background: rgba(17,24,39,.7); }
+    .toolbtn:active { transform: translateY(1px); }
+
+    footer { color: var(--muted); font-size: 12px; text-align: center; padding: 16px 8px 48px; }
+
+    @media (min-width: 560px) {
+      header.hero h1 { font-size: 34px; }
+      .gallery img { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge"><span class="dot"></span> INVITE</span>
+
+    <header class="hero">
+      <h1>8월을 마무리하며…<br>점심식사 자리에 초대합니다!</h1>
+      <p class="lead">가볍게 식사하시며 담소 나누는 시간, 편히 오세요.</p>
+    </header>
+
+    <section class="card grid" aria-labelledby="event-info">
+      <div class="row">
+        <div class="label">일시</div>
+        <div>
+          <div class="value">2025년 8월 31일(일) 12:30</div>
+          <div class="sub">* 주차 가능 여부는 매장에 문의 바랍니다.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">장소</div>
+        <div>
+          <div class="value">고운달한정식</div>
+          <div class="sub">서울 양천구 중앙로 322 · 2, 3, 6층</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">지도</div>
+        <div>
+          <a class="value" href="https://naver.me/GXAKTX9v" target="_blank" rel="noopener">네이버 지도 열기</a>
+          <div class="tools">
+            <button class="toolbtn" id="copyAddressBtn" type="button">주소 복사</button>
+            <button class="toolbtn" id="shareBtn" type="button">공유하기</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn primary" id="addCalBtn" href="#" download>캘린더에 추가</a>
+        <a class="btn ghost" href="https://naver.me/GXAKTX9v" target="_blank" rel="noopener">길찾기</a>
+      </div>
+
+      <div class="gallery" aria-label="사진">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA4MDVfMjA0%2FMDAxNzU0MzI2NjIxNDM5.-BNFwVP97R7XVIGq6gCvuBdayy9YGPnJ434di4OCgJYg.bsjeCnY85Hmyv45B29x_aN0wjkWc376OdbQjFq_eCxYg.JPEG%2FKakaoTalk_20250805_013707348_03.jpg" alt="고운달한정식 내부 사진 1" />
+        <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTA4MjBfMjA3%2FMDAxNzU1Njc2MDgzMTg2.giICDqnWqpsIkDf5e2_hHx9dNh3sTZ0m3Ink_sZkm2Mg.K3sH5TS1cJZi8UWCd381OPivX8bfJmabaNYv4E_EVTog.JPEG%2F20250819_171500.jpg.jpg%3Ftype%3Dw1500_60_sharpen" alt="고운달한정식 내부 사진 2" />
+      </div>
+    </section>
+
+    <footer>
+      본 초대장은 모바일에 최적화되어 있습니다. 꼭 사정이 생기면 미리 알려 주세요.
+    </footer>
+  </div>
+
+  <script>
+    // ====== 일정(ICS) 파일 만들기 ======
+    (function initICS(){
+      const btn = document.getElementById('addCalBtn');
+      const title = '점심 식사 초대 – 8월을 마무리하며';
+      const description = '고운달한정식에서 함께 점심식사 나눠요.\n네이버지도: https://naver.me/GXAKTX9v';
+      const location = '고운달한정식, 서울 양천구 중앙로 322 (2·3·6층)';
+      // 2025-08-31 12:30 KST → UTC
+      const dtStartUtc = '20250831T033000Z';
+      const dtEndUtc   = '20250831T050000Z'; // 14:00 KST
+      const uid = 'lunch-20250831-1230@gowoon-dal';
+
+      const ics = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Invite//Mobile OnePage//KO',
+        'CALSCALE:GREGORIAN',
+        'METHOD:PUBLISH',
+        'BEGIN:VEVENT',
+        `UID:${uid}`,
+        `DTSTAMP:${new Date().toISOString().replace(/[-:]/g,'').replace(/\..+/,'Z')}`,
+        `DTSTART:${dtStartUtc}`,
+        `DTEND:${dtEndUtc}`,
+        `SUMMARY:${title}`,
+        `DESCRIPTION:${description.replace(/\n/g,'\\n')}`,
+        `LOCATION:${location}`,
+        'END:VEVENT',
+        'END:VCALENDAR' 
+      ].join('\r\n');
+
+      const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      btn.href = url;
+      btn.download = 'lunch-invite-20250831.ics';
+    })();
+
+    // ====== 주소 복사 ======
+    document.getElementById('copyAddressBtn').addEventListener('click', async () => {
+      const address = '서울 양천구 중앙로 322 (고운달한정식 · 2·3·6층)';
+      try {
+        await navigator.clipboard.writeText(address);
+        toast('주소를 복사했습니다.');
+      } catch {
+        toast('복사에 실패했습니다.');
+      }
+    });
+
+    // ====== 공유하기 (Web Share API) ======
+    document.getElementById('shareBtn').addEventListener('click', async () => {
+      const shareData = {
+        title: '점심 식사 초대',
+        text: '2025년 8월 31일(일) 12:30 · 고운달한정식',
+        url: 'https://naver.me/GXAKTX9v'
+      };
+      if (navigator.share) {
+        try { await navigator.share(shareData); } catch { /* user canceled */ }
+      } else {
+        toast('공유 기능을 지원하지 않는 기기입니다.');
+      }
+    });
+
+    // ====== 간단 토스트 ======
+    function toast(msg){
+      let t = document.getElementById('toast');
+      if(!t){
+        t = document.createElement('div');
+        t.id = 'toast';
+        t.style.cssText = 'position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:#0b1327;color:#e5e7eb;border:1px solid rgba(148,163,184,.25);padding:10px 14px;border-radius:999px;box-shadow:0 10px 24px rgba(2,6,23,.5);z-index:9999;font-size:12px;opacity:0;transition:opacity .2s;';
+        document.body.appendChild(t);
+      }
+      t.textContent = msg; t.style.opacity = '1';
+      setTimeout(()=>{ t.style.opacity = '0'; }, 1600);
+    }
+  </script>
+</body>
+</html>
